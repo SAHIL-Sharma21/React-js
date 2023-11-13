@@ -14,6 +14,7 @@ function App() {
     
     //adding feature that the count dont go above 20
     if(counter < 20) setCounter(counter + 1);
+    // counter < 20 ? setCounter(counter + 1) : alert('Memeroy Full');
   }
 
   //logic for removing the value from the counter variable.

@@ -62,7 +62,7 @@
 //                         {/*Loop and Add TodoItem here */}
 //                         {todos.map( (todo) => (
 //                           <div key={todo.id} className='w-full'>
-//                             <TodoItem />
+//                             <TodoItem /> //error here i guess
 //                           </div>
 //                         ))}
 //                     </div>

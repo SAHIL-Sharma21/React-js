@@ -6,10 +6,14 @@ function TodoItem({ todo }) {
   const [todoMsg, setTodoMsg] = useState(todo.todo)
   const {updateTodo, deleteTodo, toggleComplete} = useTodo()
 
+  //logic for edit todo
   const editTodo = () => {
-    updateTodo(todo.id, {...todo, todo: todoMsg})
-    setIsTodoEditable(false)
+    updateTodo(todo.id, {...todo, todo: todoMsg});
+    //after todo is edited we are not allowing user to set todo again that is why we are giving false .
+    setIsTodoEditable(false);
   }
+
+  //logic for toggle todo
   const toggleCompleted = () => {
     //console.log(todo.id);
     toggleComplete(todo.id)

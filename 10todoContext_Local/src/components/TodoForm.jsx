@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { useTodo } from '../context/index';
 
 function TodoForm() {
-    const [todo, setTodo] = useState("")
-    const {addTodo} = useTodo()
+    const [todo, setTodo] = useState("");
+    const {addTodo} = useTodo() //extracting the addTodo method from useTodo custom hook which has context.
 
     const add = (e) => {
-      e.preventDefault()
+      e.preventDefault();
 
       if (!todo) return
 

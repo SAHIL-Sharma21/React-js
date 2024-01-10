@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 //importing useDispatch from react redux
 import {useDispatch} from 'react-redux';
 //individual reducers ko leke ayenge jo hm dispatch mei use krenge.
-import {addTodo} from '../features/todo/todoSlice'
+import {addTodo, updateTodo} from '../features/todo/todoSlice'
 
 function AddTodo() {
    //AddTodo:- Store ke ander khuch add krna hai, add krenge hm dispatch se.
@@ -22,6 +22,9 @@ function AddTodo() {
         setInput("");//empty string
     }
 
+    //update todo 
+    
+    
 
 
   return (

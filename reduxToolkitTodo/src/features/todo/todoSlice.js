@@ -35,14 +35,14 @@ export const todoSlice = createSlice({
         },
         //updating functionality
         updateTodo: (state, action) => {
-            state.todos = state.todos.map((todo) => todo.id === action.payload ? action.payload : todo);
+            // state.todos = state.todos.map((todo) => todo.id === action.payload.id ? action.payload : todo);
         },
     },
 });
 
 
 //exporting reducres functionality  - indiviual functionality will be useful in component
-export const { addTodo, removeTodo } = todoSlice.actions;
+export const { addTodo, removeTodo, updateTodo } = todoSlice.actions;
 
 //our store need all the reducers to work thats why we are exporting drfault all the reducers.
 export default todoSlice.reducer;

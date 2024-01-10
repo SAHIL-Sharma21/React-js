@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 //importing useSelector and useDispatch 
 import {useSelector, useDispatch} from 'react-redux';
 //want to remove the todo from the list so we need useDispatch and removeTodo reducer.
-import {removeTodo} from '../features/todo/todoSlice'
+import {removeTodo, updateTodo} from '../features/todo/todoSlice'
 
 function Todos() {
 
@@ -12,6 +12,10 @@ function Todos() {
 
 //khuch values dispatch bhi krenge toh useDispatch krenge
 const dispatch = useDispatch();
+
+//updating code
+
+
 
 
   return (
@@ -36,6 +40,8 @@ const dispatch = useDispatch();
             key={todo.id}
           >
             <div className='text-white'>{todo.text}</div>
+            <div className='flex gap-2 text-white'>
+              <button onClick={() => dispatch(updateTodo(todo.id, todo.text))}>update</button>
             <button
              onClick={() => dispatch(removeTodo(todo.id))}
               className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
@@ -55,6 +61,7 @@ const dispatch = useDispatch();
                 />
               </svg>
             </button>
+            </div>
           </li>
         ))}
       </ul>

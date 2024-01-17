@@ -1,6 +1,6 @@
 import React from 'react'
 
-//making common button component and will parameters
+//making common button component and will give parameters
 //children wohi jo bhi text pass hoga wohi text button ka hoga!!
 //type and bgcolor mei default value hai age koi user value dega toh change ho jayega wrna same default rahgea!!
 

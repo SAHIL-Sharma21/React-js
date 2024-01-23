@@ -98,7 +98,7 @@ export class Service {
 
 
     //listing post method writing query in default parameter >>> where status is active >>> we have to use Query for this
-    async getPost(queries = [Query.equal("status", "active")]) {
+    async getPosts(queries = [Query.equal("status", "active")]) {
         try {
             return await this.databses.listDocuments(
                 conf.appwriteDatabaseId,

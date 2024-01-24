@@ -9,9 +9,8 @@ import { useSelector } from 'react-redux'
 function Header() {
 
   //checking user is there
-  const authStatus = useSelector((state) => {
-    state.auth.status; //iske under auth ka status mil jayega yeh hme authSkice mei milega
-  });
+  const authStatus = useSelector((state) => state.auth.status); //iske under auth ka status mil jayega yeh hme authSkice mei milega
+
 
   const navigate = useNavigate();
 

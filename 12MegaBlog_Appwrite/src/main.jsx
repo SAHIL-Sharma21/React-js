@@ -11,7 +11,8 @@ import AllPost from "./pages/AllPost.jsx";
 import AddPost from "./pages/AddPost.jsx";
 import EditPost from "./pages/EditPost.jsx";
 import Post from "./pages/Post.jsx";
-import { AuthLayout, Login, Signup } from './components/index.js'
+import Signup from "./pages/Signup.jsx";
+import { AuthLayout, Login } from './components/index.js'
 
 //making router and routes
 const router = createBrowserRouter([
